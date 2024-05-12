@@ -31,7 +31,7 @@ class model_input(BaseModel):
     market:str
     commodity:str
     variety:str
-    month:float 
+    month:str 
     year:int
     day:int
     
