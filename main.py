@@ -38,7 +38,7 @@ class model_input(BaseModel):
 
 
 model = pickle.load(open('price_prediction_trained2.sav', 'rb'))
-preprocessor = pickle.load(open('processor2.sav', 'rb'))
+preprocessor = pickle.load(open('preprocessor2.sav', 'rb'))
 
 @app.post('/predict')
 def pred(input_parameters: model_input):
